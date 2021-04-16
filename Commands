@@ -1,0 +1,22 @@
+docker container run -d --name nginx nginx //to start a nginx server
+
+docker run --name=mysql -d -e MYSQL_ROOT_PASSWORD=YES mysql/mysql-server:latest 
+
+docker contianer top nginx //process list in one container here nginx
+
+docker contianer inspect //details of one container config 
+
+docker container stats. //performance stats for all containers
+
+//get into a container
+
+docker container run -it --name proxy nginx bash      //t-> TTY  -i-> interactive.  //this command gives us a bash tty to the container no need to ssh
+
+
+docker container run -it --name ubuntu ubuntu. //start ubuntu container in interactive mode
+docker container start -ai ubuntu // start the same container again and go to the bash
+
+
+docker container exec -it mysql bash  //jump into the already running container 
+
+docker pull alpine
