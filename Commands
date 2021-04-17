@@ -20,3 +20,24 @@ docker container start -ai ubuntu // start the same container again and go to th
 docker container exec -it mysql bash  //jump into the already running container 
 
 docker pull alpine
+
+docker container run -it alpine sh.  //to start sh tty in alpine
+
+docker container port <container_name> //port check
+
+
+//docker network commands
+
+docker network ls. //show networks
+
+docker network inspect //inspect a network
+
+docker network create --driver //create a network
+
+docker network connect //attach a network to container
+
+docker network disconnect //detach a network from container
+
+
+
+
